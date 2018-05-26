@@ -89,6 +89,6 @@ if you have [*netcat*](https://www.sans.org/security-resources/sec560/netcat_che
 
 Type in message data; netcat will send each time you press return. Hit `CTrl-C` to finish
 
-and the results in Quickstart
+Then observe the results in [Quickstart](https://quickstart.internetofthings.ibmcloud.com/#/device/udp-relay-1885/sensor):
 
 ![](img/udp-relay-quickstart.png)
