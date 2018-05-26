@@ -1,0 +1,49 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+ labels:
+   app: udp-mqtt-relay
+ name: udp-mqtt-relay
+ namespace: default
+spec:
+ selector:
+   matchLabels:
+     app: udp-mqtt-relay
+ replicas: 1
+ template:
+   metadata:
+     labels:
+       app: udp-mqtt-relay
+   spec:
+     containers:
+     - image: registry.eu-gb.bluemix.net/rdcevo/nrudpmqtt:latest
+       name: udp-mqtt-relay
+---
+apiVersion: v1
+kind: Service
+metadata:
+ name: udp-mqtt-relay-udp
+ labels:
+   app: udp-mqtt-relay
+spec:
+ selector:
+   app: udp-mqtt-relay
+ type: NodePort
+ ports:
+  - port: 1880
+    name: tcp1884
+    protocol: TCP
+    nodePort: 31880
+  - port: 1884
+    name: udp1884str
+    protocol: UDP
+    nodePort: 31884
+  - port: 1885
+    name: udp1885b64
+    protocol: UDP
+    nodePort: 31885
+  - port: 1886
+    name: udp1886bin
+    protocol: UDP
+    nodePort: 31886
+
