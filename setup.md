@@ -83,6 +83,12 @@ If you don't have your own UDP client to generate test packets, check out [Packe
 
 ![](img/udp-test-packet-sender.png)
 
+if you have [*netcat*](https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf) installed, you can generate traffic interactively or with a script
+
+`nc -u udprelay 31884`
+
+Type in message data; netcat will send each time you press return. Hit `CTrl-C` to finish
+
 and the results in Quickstart
 
 ![](img/udp-relay-quickstart.png)
