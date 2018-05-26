@@ -77,7 +77,7 @@ Note the external IP address:
 
 Add the external IP address to your local `/etc/hosts` file
 
-`sudo echo *ipaddress* udprelay > /etc/hosts`
+`echo *ipaddress* udprelay >> /etc/hosts`
 
 If you don't have your own UDP client to generate test packets, check out [Packet Sender](https://packetsender.com/download)
 
