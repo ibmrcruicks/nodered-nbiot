@@ -5,6 +5,10 @@ Add the containers service plugin to the CLI
 
 `bx plugin install container-registry -r Bluemix`
 
+and
+
+`bx plugin install container-service -r Bluemix`
+
 Login to IBM Cloud
 
 `bx login`
@@ -26,7 +30,7 @@ Create a free cluster
 # Set up the local container environment - Docker
 Install [docker tools for your Operating System](https://www.docker.com/community-edition#/download)
 
-Create [Dockerfile](/docker)
+Create [Dockerfile](Dockerfile)
 
 Create node-RED flow file [flows.json](/flows.json)
 ![](img/node-red-relay-flow.png)
