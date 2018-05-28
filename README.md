@@ -18,3 +18,5 @@ The process accepts messages on 3  UDP ports:
 ![](img/node-red-relay-flow.png)
 
 Basic setup requirements are derived from the [tutorial](https://console.bluemix.net/docs/containers/cs_tutorials_cf.html#cf_tutorial), with adjustments as needed to build the application using [node-RED](https://nodered.org).
+
+Ready to give it a try? Use the [setup process](setup.md) to get going.
