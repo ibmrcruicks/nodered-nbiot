@@ -57,7 +57,7 @@ The output from this command will show the instruction for exporting *KUBECONFIG
 
 `export KUBECONFIG=/home/(...).yaml`
 
-Create an instance of the application image, and define the service ports to make it accessible on the public IP address
+Create an instance of the application image, and define the service ports to make it accessible on the public IP address (see the [yaml file](udp-mqtt-relay.yaml))
 
 `kubectl apply -f udp-mqtt-relay.yaml`
 
